@@ -1,0 +1,242 @@
+
+@media (max-width: 768px) {
+    .menu-btn {
+        display: flex;
+    }
+
+    .menu-btn.translate {
+        transform: translateX(-200px);
+    }
+
+    .menu-btn.translate span {
+        background: transparent;
+    }
+
+    .menu-btn.translate span::before {
+        transform: rotate(45deg);
+    }
+
+    .menu-btn.translate span::after {
+        transform: rotate(-45deg);
+    }
+    
+    .navbar {
+        width: 260px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(2px);
+        transform: translateX(100%);
+    }
+
+    .navbar.open {
+        transform: translateX(0%);
+    }
+
+    .navbar ul{
+        width: auto;
+        height: auto;
+        margin-top: 30%;
+        margin-left: 25px;
+        line-height: 45px;
+    }
+
+    .navbar ul li{
+        display: block;
+        position: relative;
+        border: 1px solid #00638a;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-left-color: transparent;
+    }
+
+    .navbar ul li a:hover {
+        background: none;
+        color: #00b7ff;
+    }
+
+    .skills {
+        width: 100%;
+        height: 100%;
+    }
+
+    .skills-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 25px;
+        margin-top: 20px;
+    }
+
+
+    .about-me {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .skills-boxes {
+        width: 95%;
+    }
+
+    .section-headings {
+        font-size: 28px;
+    }
+
+    .works, .works-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .contact {
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact-content {
+        width: 100%;
+        height: 100vh;
+    }
+    
+}
+
+@media (max-width: 610px) {
+    
+
+    .contact {
+        width: 100%;
+        height: 100%;
+    }
+    .contact-content {
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    form {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        border-radius: 0;
+        background: none;
+        box-shadow: none;
+        margin-top: 30px;
+    }
+
+    form div textarea {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .header .logo a{
+        font-family: 'Mitr', sans-serif;
+        font-size: 24px;
+        color: #ebebeb;
+    }
+
+    .menu-btn {
+        width: 30px;
+        height: 30px;
+        background: none;
+    }
+
+    .menu-btn:hover {
+        background: none;
+    }
+
+    .menu-btn span {
+        width: 20px;
+    }
+
+    .navbar ul li a {
+        font-size: 18px;
+    }
+
+    .home-content p {
+        text-shadow: 1px 1px 10px #1a1a1a;
+    }
+    
+    .home-content p:nth-child(1) {
+           font-size: 30px;
+    }
+    
+    .home-content p:nth-child(2) {
+        font-size: 20px;
+    }
+    
+    .home-content p:nth-child(3) {
+        font-size: 16px;
+    }
+    
+    .home-content .read-btn {
+        font-size: 16px;
+        padding: 6px 10px;
+    }
+
+    .skills-content {
+        padding: 0;
+    }
+
+    .about-me {
+       margin-top: 25px;
+       font-size: 16px;
+       border: none;
+    }
+
+    .works, .contact, .contact-content {
+        padding: 0;
+    }
+
+    .works-content {
+        padding: 0 5px 0 5px;
+    }
+
+    .works-content .works-box {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .works-img img {
+        width: 100%;
+        height: 200px;
+    }
+
+    form {
+        width: 100%;
+        height: 100%;
+    }
+
+    form div input {
+        width: 100%;
+        text-indent: 5px;
+    }
+
+    form div {
+        margin: 5px;
+    }
+
+    form div textarea {
+        text-indent: 5px;
+        padding: 2px;
+    }
+
+    .footer {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+}
+
